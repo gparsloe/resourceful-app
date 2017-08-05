@@ -1,0 +1,37 @@
+body {
+  cursor: url('https://ionicframework.com/img/finger.png'), auto;
+}
+.blue {
+  
+   background:blue;
+   
+   text-align: center;
+}
+.yellow {
+  
+ 
+  
+  background:yellow;
+  text-align: center;
+ 
+}
+.pink {
+ 
+  
+  background:pink;
+  text-align: center;
+  
+}
+ion-slides{
+  
+   background-color: #A3BBDF;
+}
+ion-slide-page{
+ 
+  background-color: #A3BBDF;
+  
+}
+
+.my-wrap-class-active {
+  background : yellow;
+}
