@@ -6,6 +6,28 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
+/* start of codepen added code */
+.controller('AppController', function($scope, $interval, $ionicSlideBoxDelegate) {
+ $scope.mData = [];
+  for(var i = 0; i<100; i++){
+    $scope.mData.push(i);
+    
+  }
+  $scope.options = {
+  loop: false,
+  autoHeight:true,
+  speed: 500,
+}
+ 
+  $scope.data = {};
+	$scope.$watch('data.slider',function(nv, ov) {
+ 	$scope.slider = $scope.data.slider;
+			//console.log($scope.slider);
+			})  
+
+
+})
+/* end of codepen added code */
 
 .config(function($ionicConfigProvider) {
     $ionicConfigProvider.tabs.position('bottom');
